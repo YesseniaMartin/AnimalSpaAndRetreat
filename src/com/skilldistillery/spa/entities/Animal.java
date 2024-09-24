@@ -3,6 +3,7 @@ package com.skilldistillery.spa.entities;
 //kind of animal
 public abstract class Animal {
 	private String name;
+	
 
 //	methods being used
 	public Animal() {
@@ -12,12 +13,19 @@ public abstract class Animal {
 //	this make them know the name of the animal
 	public Animal(String name) {
 		this.name =  name;
+		
 	}
 
 //	this is how my animal eats
+	public void eat() {
+	
+	}
+	
 	public void eat(int quantity) {
+		this.eat();
 		System.out.println("Don't bother me, I'm eating " + quantity + " lbs of food");
 	}
+	
 
 //	the animal has noise
 	public void makeNoise() {
@@ -32,5 +40,6 @@ public abstract class Animal {
 	public void setName(String name) {
 		this.name = name;
 	}
+
 
 }
