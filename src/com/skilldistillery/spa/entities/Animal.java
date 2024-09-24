@@ -21,7 +21,7 @@ public abstract class Animal {
 
 //	the animal has noise
 	public void makeNoise() {
-		System.out.println("I am Animal, growling with delight!");
+		System.out.println("I am Animal, roaring with delight!");
 	}
 
 //	getters and setters for my private class
