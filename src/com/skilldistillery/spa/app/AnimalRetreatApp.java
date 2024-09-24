@@ -1,6 +1,7 @@
 package com.skilldistillery.spa.app;
 
 import com.skilldistillery.spa.entities.Dragon;
+import com.skilldistillery.spa.entities.Eagle;
 import com.skilldistillery.spa.entities.Penguin;
 
 public class AnimalRetreatApp {
@@ -17,6 +18,9 @@ public class AnimalRetreatApp {
 		
 		Penguin penguin = new Penguin("Amaree");
 		System.out.println(penguin.getName());
+		
+		Eagle eagle = new Eagle("Kiyan");
+		System.out.println(eagle.getName());
 
 	}
 
