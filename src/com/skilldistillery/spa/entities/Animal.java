@@ -3,8 +3,8 @@ package com.skilldistillery.spa.entities;
 //kind of animal
 public abstract class Animal {
 	private String name;
+	public int quantity;
 	
-
 //	methods being used
 	public Animal() {
 
@@ -17,19 +17,14 @@ public abstract class Animal {
 	}
 
 //	this is how my animal eats
-	public void eat() {
-	
-	}
 	
 	public void eat(int quantity) {
-		this.eat();
-		System.out.println("Don't bother me, I'm eating " + quantity + " lbs of food");
+		System.out.println("Don't bother me, when I'm eating " + quantity + " lbs of food.");
 	}
 	
-
 //	the animal has noise
 	public void makeNoise() {
-		System.out.println("I am Animal, roaring with delight!");
+		System.out.println("I am Animal, growling with delight ");
 	}
 
 //	getters and setters for my private class

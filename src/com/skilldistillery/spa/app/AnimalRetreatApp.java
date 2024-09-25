@@ -16,17 +16,35 @@ public class AnimalRetreatApp {
 	public void run() {
 		
 		AnimalRetreat retreat = new AnimalRetreat("Sara the Attendant");
+		System.out.println(retreat);
 		
-		Dragon dragon = new Dragon("Frank");
-		System.out.println(dragon.getName());
+		Dragon dragon = new Dragon("Amaree");
+		System.out.println("Hello I'm " + dragon.getName() + " the Dragon.");
+		
+		Dragon dragonEats = new Dragon();
+		dragonEats.eat(122);
+		
+		Dragon dragonNoise = new Dragon();
+		dragonNoise.makeNoise();
+		
+		Penguin penguin = new Penguin("Kiyan");
+		System.out.println("Hello I'm " + penguin.getName() + " the Penguin.");
+		
+		Penguin penguinEats = new Penguin();
+		penguinEats.eat(15);
+		
+		Penguin penguinNoise = new Penguin();
+		penguinNoise.makeNoise();
 		
 		
+		Eagle eagle = new Eagle("Frank");
+		System.out.println("Hello I'm " + eagle.getName() + " the Eagle.");
 		
-		Penguin penguin = new Penguin("Amaree");
-		System.out.println(penguin.getName());
+		Eagle eaglesEats = new Eagle();
+		eaglesEats.eat(50);
 		
-		Eagle eagle = new Eagle("Kiyan");
-		System.out.println(eagle.getName());
+		Eagle eagleNoise = new Eagle();
+		eagleNoise.makeNoise();
 				
 		
 		
