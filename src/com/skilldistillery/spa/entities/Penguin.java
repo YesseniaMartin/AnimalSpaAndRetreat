@@ -4,6 +4,9 @@ public class Penguin extends Animal {
 	private String noise = "Whistlinggggg";
 	
 //	methods
+	public void makeRounds() {
+		
+	}
 	
 	public Penguin() {
 		super();

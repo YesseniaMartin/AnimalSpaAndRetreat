@@ -2,12 +2,15 @@ package com.skilldistillery.spa.entities;
 
 public class Dragon extends Animal {
 	private String noise = "Roaaaaaaring";
-	public int quantity;
 	
 //	methods 
 	
 	public Dragon() {
 		super();
+		
+	}
+	
+	public void makeRounds() {
 		
 	}
 	
@@ -19,6 +22,7 @@ public class Dragon extends Animal {
 		super(name);
 		this.noise = noise + " " + noise;
 	}
+	
 	
 	@Override
 	public void makeNoise() {

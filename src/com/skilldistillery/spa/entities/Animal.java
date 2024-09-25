@@ -10,14 +10,13 @@ public abstract class Animal {
 
 	}
 
-//	this make them know the name of the animal
+
+	//	this make them know the name of the animal
 	public Animal(String name) {
 		this.name =  name;
 		
 	}
-
 //	this is how my animal eats
-	
 	public void eat(int quantity) {
 		System.out.println("Don't bother me, when I'm eating " + quantity + " lbs of food.");
 	}
@@ -35,6 +34,9 @@ public abstract class Animal {
 	public void setName(String name) {
 		this.name = name;
 	}
-
-
+	
+	@Override
+	public String toString() {
+		return "Animal [name=" + name + ", quantity=" + quantity + "]";
+	}
 }

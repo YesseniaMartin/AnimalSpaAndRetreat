@@ -13,6 +13,10 @@ public class Eagle extends Animal{
 		super(name);
 	}
 	
+	public void makeRounds() {
+		
+	}
+	
 	@Override
 	public void eat(int quantity) {
 		System.out.println("I enjoy " + quantity + " of fish, squirrels, birds");

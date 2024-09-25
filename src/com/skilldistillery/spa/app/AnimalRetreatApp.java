@@ -1,6 +1,8 @@
 package com.skilldistillery.spa.app;
 
+import com.skilldistillery.spa.entities.Animal;
 import com.skilldistillery.spa.entities.AnimalRetreat;
+import com.skilldistillery.spa.entities.Attendant;
 import com.skilldistillery.spa.entities.Dragon;
 import com.skilldistillery.spa.entities.Eagle;
 import com.skilldistillery.spa.entities.Penguin;
@@ -16,38 +18,30 @@ public class AnimalRetreatApp {
 	public void run() {
 		
 		AnimalRetreat retreat = new AnimalRetreat("Sara the Attendant");
-		System.out.println(retreat);
+		System.out.println(retreat.getAttendant().getName());
+		Attendant rounds = new Attendant();
+		rounds.makeRounds();
+		System.out.println();
+		System.out.println();
+		
 		
 		Dragon dragon = new Dragon("Amaree");
 		System.out.println("Hello I'm " + dragon.getName() + " the Dragon.");
-		
-		Dragon dragonEats = new Dragon();
-		dragonEats.eat(122);
-		
-		Dragon dragonNoise = new Dragon();
-		dragonNoise.makeNoise();
+		dragon.eat(122);
+		dragon.makeNoise();
+		System.out.println();
 		
 		Penguin penguin = new Penguin("Kiyan");
 		System.out.println("Hello I'm " + penguin.getName() + " the Penguin.");
-		
-		Penguin penguinEats = new Penguin();
-		penguinEats.eat(15);
-		
-		Penguin penguinNoise = new Penguin();
-		penguinNoise.makeNoise();
-		
+		penguin.eat(15);
+		penguin.makeNoise();
+		System.out.println();
+
 		
 		Eagle eagle = new Eagle("Frank");
 		System.out.println("Hello I'm " + eagle.getName() + " the Eagle.");
-		
-		Eagle eaglesEats = new Eagle();
-		eaglesEats.eat(50);
-		
-		Eagle eagleNoise = new Eagle();
-		eagleNoise.makeNoise();
-				
-		
-		
+		eagle.eat(50);
+		eagle.makeNoise();
 
 	}
 
