@@ -10,7 +10,6 @@ public abstract class Animal {
 
 	}
 
-
 	//	this make them know the name of the animal
 	public Animal(String name) {
 		this.name =  name;
