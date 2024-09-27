@@ -1,5 +1,4 @@
 package com.skilldistillery.spa.entities;
-import com.skilldistillery.spa.entities.Animal;
 
 
 
@@ -15,6 +14,7 @@ public class AnimalRetreat {
 	// Methods
 	public AnimalRetreat(String attendantName) {
 		setAttendant(new Attendant(attendantName));
+		
 	}
 
 	public void Attendant(Attendant attendant) {
@@ -25,25 +25,16 @@ public class AnimalRetreat {
 		return attendant;
 	}
 
-	public AnimalRetreat[] createRooms() {
-		return new AnimalRetreat[10];
+	public Animal[] createRooms() {
+		return new Animal[10];
 	}
 
 	public void setAttendant(Attendant attendant) {
 		this.attendant = attendant;
 	}
-	
 
-	public void displayRoomInfo() {
-		System.out.println("There are " + roomsArr.length + " rooms in the spa.");
-		for (Animal room : roomsArr) {
-			if (room != null) {
-			System.out.println("- " + room.getName());
-			} else {
-				System.out.println("- This room is empty.");
-			}
-		}
-	}
+	
+	
 	
 	
 

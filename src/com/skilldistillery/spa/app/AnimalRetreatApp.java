@@ -1,6 +1,7 @@
 package com.skilldistillery.spa.app;
 
 
+import com.skilldistillery.spa.entities.Animal;
 import com.skilldistillery.spa.entities.AnimalRetreat;
 import com.skilldistillery.spa.entities.Attendant;
 import com.skilldistillery.spa.entities.Dragon;
@@ -19,32 +20,30 @@ public class AnimalRetreatApp {
 	
 		AnimalRetreat retreat = new AnimalRetreat("Sara the Attendant");
 		System.out.println("Attendant: " + retreat.getAttendant().getName());
-		retreat.createRooms();
-		retreat.displayRoomInfo();
+		
+		Animal[] rooms = retreat.createRooms();
 		Attendant attendant = new Attendant();
-		attendant.createRooms();
+		int foodAmount = 10;
+		attendant.makeRounds(rooms, foodAmount);
 		System.out.println();
 		
 		Dragon dragon = new Dragon("Amaree");
 		System.out.println("Hello I'm " + dragon.getName() + " the Dragon.");
-		dragon.eat(122);
 		dragon.makeNoise();
+		dragon.eat(122);
 		System.out.println();
 		
 		Penguin penguin = new Penguin("Kiyan");
 		System.out.println("Hello I'm " + penguin.getName() + " the Penguin.");
-		penguin.eat(15);
 		penguin.makeNoise();
+		penguin.eat(15);
 		System.out.println();
 
 		
 		Eagle eagle = new Eagle("Frank");
 		System.out.println("Hello I'm " + eagle.getName() + " the Eagle.");
-		eagle.eat(50);
 		eagle.makeNoise();
-		
-		
-		
+		eagle.eat(50);
 		System.out.println();
 
 	}
