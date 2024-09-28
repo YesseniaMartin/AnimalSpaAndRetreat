@@ -20,6 +20,7 @@ public class AnimalRetreat {
 	// Methods
 
 	public void listAnimal() {
+		System.out.println("Listing animals in the retreat:");
 
 		for (int i = 0; i < animalRooms.length; i++) {
 
@@ -28,7 +29,6 @@ public class AnimalRetreat {
 			} else if (animalRooms[i] == null) {
 				System.out.println("This room is empty");
 			}
-			System.out.println("Listing animals in the retreat:");
 
 		}
 
@@ -56,6 +56,7 @@ public class AnimalRetreat {
 	public void setAttendant(Attendant attendant) {
 		this.attendant = attendant;
 	}
+	
 
 	@Override
 	public String toString() {

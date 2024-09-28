@@ -1,5 +1,7 @@
 package com.skilldistillery.spa.entities;
 
+import java.util.Objects;
+
 public class Attendant {
 // feeds the animal
 //
@@ -43,6 +45,24 @@ public class Attendant {
 			System.out.println("Rounds completed. The attendant is done for the day");
 		}
 
+	}
+	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(animal, name);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Attendant other = (Attendant) obj;
+		return Objects.equals(animal, other.animal) && Objects.equals(name, other.name);
 	}
 
 	@Override
