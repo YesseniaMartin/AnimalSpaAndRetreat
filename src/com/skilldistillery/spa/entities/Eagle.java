@@ -29,4 +29,12 @@ public class Eagle extends Animal{
 		System.out.println("Produce sharp barking sound " + noise);
 	}
 
+	@Override
+	public String toString() {
+		return "Eagle [noise=" + noise + ", quantity=" + quantity + ", getName()=" + getName() + ", toString()="
+				+ super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+	}
+	
+	
+
 }

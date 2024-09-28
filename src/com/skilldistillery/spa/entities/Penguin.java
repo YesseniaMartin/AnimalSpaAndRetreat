@@ -27,4 +27,12 @@ public class Penguin extends Animal {
 		System.out.println("High-pitched sounds " + noise);
 	}
 
+	@Override
+	public String toString() {
+		return "Penguin [noise=" + noise + ", quantity=" + quantity + ", getName()=" + getName() + ", toString()="
+				+ super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+	}
+	
+	
+
 }

@@ -38,7 +38,6 @@ public class AnimalRetreatApp {
 		eagle.makeNoise();
 		eagle.eat(50);
 		System.out.println();
-		
 
 	}
 

@@ -1,11 +1,14 @@
 package com.skilldistillery.spa.entities;
 
+import java.util.Arrays;
+
 public class AnimalRetreat {
 	// fields
 	private Attendant attendant;
 	Animal[] animalRooms = new Animal[10];
 
 	// Constructors
+
 	public AnimalRetreat() {
 	}
 
@@ -19,12 +22,14 @@ public class AnimalRetreat {
 	public void listAnimal() {
 
 		for (int i = 0; i < animalRooms.length; i++) {
-			System.out.println("Listing animals in the retreat:");
+
 			if (animalRooms[i] != null) {
 				System.out.println(animalRooms[i].getName() + " is in the room");
 			} else if (animalRooms[i] == null) {
 				System.out.println("This room is empty");
 			}
+			System.out.println("Listing animals in the retreat:");
+
 		}
 
 	}
@@ -39,17 +44,24 @@ public class AnimalRetreat {
 			}
 		}
 	}
-	
+
 	public void startAttendantRounds(Animal[] animals, int foodAmount) {
 		getAttendant().makeRounds(animals, foodAmount);
 	}
-	
+
 	public Attendant getAttendant() {
 		return attendant;
 	}
 
 	public void setAttendant(Attendant attendant) {
 		this.attendant = attendant;
+	}
+
+	@Override
+	public String toString() {
+		return "AnimalRetreat [attendant=" + attendant + ", animalRooms=" + Arrays.toString(animalRooms)
+				+ ", getAttendant()=" + getAttendant() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
 	}
 
 }

@@ -36,4 +36,10 @@ public class Dragon extends Animal {
 		super.eat(quantity);
 	}
 
+	@Override
+	public String toString() {
+		return "Dragon [noise=" + noise + ", quantity=" + quantity + ", getName()=" + getName() + ", toString()="
+				+ super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+	}
+
 }
