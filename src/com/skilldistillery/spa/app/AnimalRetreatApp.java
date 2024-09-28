@@ -1,6 +1,4 @@
 package com.skilldistillery.spa.app;
-
-
 import com.skilldistillery.spa.entities.Animal;
 import com.skilldistillery.spa.entities.AnimalRetreat;
 import com.skilldistillery.spa.entities.Attendant;
@@ -25,6 +23,8 @@ public class AnimalRetreatApp {
 		Attendant attendant = new Attendant();
 		int foodAmount = 10;
 		attendant.makeRounds(rooms, foodAmount);
+		String animalName = "";
+		retreat.createRooms(animalName, foodAmount);
 		System.out.println();
 		
 		Dragon dragon = new Dragon("Amaree");

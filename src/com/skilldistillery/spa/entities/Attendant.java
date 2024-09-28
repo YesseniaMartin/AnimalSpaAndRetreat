@@ -1,6 +1,6 @@
 package com.skilldistillery.spa.entities;
 
-public class Attendant extends AnimalRetreat{
+public class Attendant {
 // feeds the animal
 //
 	private String name;
@@ -31,20 +31,10 @@ public class Attendant extends AnimalRetreat{
 	}
 
 	public void makeRounds(Animal[] rooms, int foodAmount) {
-		
+		System.out.println("Sara is making rounds ");
 		if (rooms == null) {
 	        System.out.println("No rooms to check.");
 	        return;
 		}
-		System.out.println("Sara is making rounds ");
-		for (int i = 0; i < rooms.length; i++) {
-	        if (rooms[i] != null) {
-	            System.out.println("I will feed " + rooms[i].getName() + ".");
-	            rooms[i].eat(foodAmount);
-	        } else {
-	            System.out.println("Room " + (i + 1) + " is empty.");
-	        }
-	    }
-	    System.out.println("Rounds completed.");
 	}
 }
