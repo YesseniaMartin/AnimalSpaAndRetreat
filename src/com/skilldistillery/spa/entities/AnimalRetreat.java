@@ -1,60 +1,55 @@
 package com.skilldistillery.spa.entities;
 
-
-
 public class AnimalRetreat {
 	// fields
 	private Attendant attendant;
-	Animal[] roomsArr = new Animal[10];
+	Animal[] animalRooms = new Animal[10];
 
 	// Constructors
 	public AnimalRetreat() {
 	}
-	
-	// Methods
+
 	public AnimalRetreat(String attendantName) {
 		setAttendant(new Attendant(attendantName));
-		
-	}
-
-	public void Attendant(Attendant attendant) {
 
 	}
 
+	// Methods
+
+	public void listAnimal() {
+
+		for (int i = 0; i < animalRooms.length; i++) {
+			System.out.println("Listing animals in the retreat:");
+			if (animalRooms[i] != null) {
+				System.out.println(animalRooms[i].getName() + " is in the room");
+			} else if (animalRooms[i] == null) {
+				System.out.println("This room is empty");
+			}
+		}
+
+	}
+
+	public void addAnimal(Animal animal) {
+		for (int i = 0; i < animalRooms.length; i++) {
+			if (animalRooms[i] == null) {
+				animalRooms[i] = animal;
+				System.out.println("Make yourself at home, " + animal.getName());
+			} else if (animalRooms[i] != null) {
+				System.out.println("No room at the retreat and spa, try again tomorrow.");
+			}
+		}
+	}
+	
+	public void startAttendantRounds(Animal[] animals, int foodAmount) {
+		getAttendant().makeRounds(animals, foodAmount);
+	}
+	
 	public Attendant getAttendant() {
 		return attendant;
 	}
 
-	public Animal[] createRooms() {
-		return new Animal[10];
-	}
-	public Animal [] createRooms(String name, int foodAmount) {
-		
-		Animal[] rooms = new Animal[10];
-		rooms[0] = new Dragon("Amaree");
-		rooms[1] = new Penguin("Kiyan");
-		rooms[2] = new Eagle("Frank");
-		
-		for (int i = 0; i < rooms.length; i++) {
-	        if (rooms[i] != null) {
-	            System.out.println("I will feed " + rooms[i].getName() + ".");
-	            rooms[i].eat(foodAmount);
-	        } else {
-	            System.out.println("Room " + (i + 1) + " is empty.");
-	        }
-	    }
-	    System.out.println("Rounds completed.");
-	    return rooms;
-	}
-	
-
 	public void setAttendant(Attendant attendant) {
 		this.attendant = attendant;
 	}
-
-	
-	
-	
-	
 
 }
