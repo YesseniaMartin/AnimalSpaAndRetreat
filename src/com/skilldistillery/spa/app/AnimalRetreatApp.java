@@ -13,32 +13,38 @@ public class AnimalRetreatApp {
 	}
 
 	public void run() {
-
+		
 		AnimalRetreat retreat = new AnimalRetreat("Sara the Attendant");
+		retreat.introduction();
 		System.out.println("Attendant: " + retreat.getAttendant().getName());
-
-		retreat.listAnimal();
-
-		System.out.println();
-
+		retreat.selectionMenu();
 		Dragon dragon = new Dragon("Amaree");
-		System.out.println("Hello I'm " + dragon.getName() + " the Dragon.");
-		dragon.makeNoise();
-		dragon.eat(122);
-		System.out.println();
-
 		Penguin penguin = new Penguin("Kiyan");
-		System.out.println("Hello I'm " + penguin.getName() + " the Penguin.");
-		penguin.makeNoise();
-		penguin.eat(15);
-		System.out.println();
-
 		Eagle eagle = new Eagle("Frank");
-		System.out.println("Hello I'm " + eagle.getName() + " the Eagle.");
-		eagle.makeNoise();
-		eagle.eat(50);
+		
+		retreat.addAnimal(dragon);
+		retreat.addAnimal(penguin);
+		retreat.addAnimal(eagle);
+		
 		System.out.println();
 
+		System.out.println();
+
+//		System.out.println("Hello I'm " + dragon.getName() + " the Dragon.");
+//		dragon.makeNoise();
+//		dragon.eat(122);
+//		System.out.println();
+//
+//		System.out.println("Hello I'm " + penguin.getName() + " the Penguin.");
+//		penguin.makeNoise();
+//		penguin.eat(15);
+//		System.out.println();
+//
+//		System.out.println("Hello I'm " + eagle.getName() + " the Eagle.");
+//		eagle.makeNoise();
+//		eagle.eat(50);
+//		System.out.println();
+//
 	}
 
 }

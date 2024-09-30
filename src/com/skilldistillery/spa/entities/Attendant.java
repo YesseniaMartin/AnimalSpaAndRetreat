@@ -41,9 +41,9 @@ public class Attendant {
 			} else if (animals[i] == null) {
 				System.out.println("No rooms to check.");
 			}
-			System.out.println("All occupants have been fed, have a great day!");
-			System.out.println("Rounds completed. The attendant is done for the day");
 		}
+		System.out.println("All occupants have been fed, have a great day!");
+		System.out.println("Rounds completed. The attendant is done for the day");
 
 	}
 	
