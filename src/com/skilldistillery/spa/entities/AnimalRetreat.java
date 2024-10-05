@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class AnimalRetreat {
 	// fields
 	private Attendant attendant;
-	Animal[] animalRooms = new Animal[10];
+	private Animal[] animalRooms = new Animal[10];
 
 	// Constructors
 
@@ -32,7 +32,7 @@ public class AnimalRetreat {
 				+ "We welcome our non-human guests, and invite them all to luxuriate in delight!\n"
 				+ "We've hired the best attendant to provide for all our guests. \n"
 				+ "Sara the Attendant , please introduce yourself!");
-		System.out.println("Hello, nice to meet you!");
+		System.out.println("Hello, I'm Sara nice to meet you!");
 	}
 
 	public void selectionMenu() {
